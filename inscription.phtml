@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="inscription.css" />
+	<title>Projet2</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<li>
+		<a href="acceuille.phtml"><li> ACCEUIL </li></a>
+		<a href="inscription.php"><li> SINSCRIRE </li></a>
+		<a href="authentification.php"><li> SAUTHENNTIFIER </li></a>
+		<a href="voter.php"><li> VOTER </li></a>
+		<a href="consultervote.php"><li> CONSULTER <br> VOTRE VOTE </li></a>
+		<a href=><li> AFFICHER RESULTATS ELECTIONS </li></a>
+		<a href="deconnexion.php"><li> DECONNEXION </li></a>
+
+</li>
+</nav>
+<img src="a.PNG" alt="logo">
+	<div>
+	<p>République Tunisienne</p> 
+	</div>
+	</header>
+<hr>
+<div id="a">
+<img src="b.JPG" alt="">
+</div>
+<div id="b">
+<img src="b.JPG" alt="">
+</div>
+<div id="c">
+	<img src="b.JPG" alt="">
+</div>
+
+<div id="description">
+	<p><h2> PAGE D'INSCRIPTION AUX ELECTIONS</h2><br><br>Il s'agit d'une inscription anonyme, aucune information permettant de reconnaitre l'électeur ne doit étre fournie.</p>
+
+
+ <form method="post">
+
+<fieldset>
+	<legend>informations générales</legend> 
+
+
+    <label for="nom">Pseudo :</label>
+	<input type="text" name="Pseudo" id="Pseudo">
+	<label for="pass">mot de passe :</label>
+    <input type="password" name="pass" id="pass" />
+    <label for="age">age:</label>
+	<input type="number" name="age" id="age" max="100" min="18" /><br>
+
+
+		 <label for="pays">votre gouvernorat:</label>
+      	<select  name="gouvernorat">
+							<?php foreach ($gouvernorat as $cat):?>
+								<option value="<?=$cat['idGouvernorat']?>"><?=$cat['nomGouvernorat']?></option>
+							<?php endforeach;?>
+						</select>
+<br />
+
+</fieldset>
+
+<input class="submit" type="submit" name ="insert" value="valider votre inscription"/>
+<input class="bouton" type="reset" value="annuler"/>
+</form>
+
+</body>
+<footer>
+	<hr>
+<div id="suiv">
+	<a href="https://www.facebook.com/isietn/"><h2>SUIVEZ NOUS</h2></a>
+	<img src="fb.JPG" alt="">
+</div>
+<div class="center">
+	<h2>PHOTOS DE LA CHAMBRE DES <br> REPRESENTANTS</h2>
+<span id="image1">
+<img src="m.JFIF" alt="">
+</span>
+<span id="image2">
+<img src="ma.PNG" alt="">
+</span>
+
+</div>
+<div class="end">
+	<h2>LIENS_UTILES</h2>
+	<a href="">instance supérieure indépendante des élections</a><br>
+	<a href="">Chambre des représentants du peuples</a>
+</div>
+	
+</footer>
+</html>
