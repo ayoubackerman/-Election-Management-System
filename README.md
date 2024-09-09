@@ -1,0 +1,1 @@
+The Election Management System is a comprehensive web application designed to streamline the electoral process. Developed using PHP, this system facilitates the registration of voters, login management, and overall election administration. 
